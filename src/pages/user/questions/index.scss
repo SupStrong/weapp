@@ -1,0 +1,29 @@
+.content {
+  padding-top:15px;
+  min-height: 100vh;
+  background: #F7F8F9;
+}
+
+.list {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px 15px 14px;
+  margin-bottom:15px;
+  .que {
+    font-weight: 500;
+    color: #222222;
+    line-height: 22px;
+  }
+  .total{
+    height: 17px;
+    color: #a7adb6;
+    line-height: 17px;
+    margin-top:10px;
+  }
+  .del{
+    font-size: 12px;
+    color: #e95454;
+    line-height: 17px;
+    margin-top:10px;
+}
+}

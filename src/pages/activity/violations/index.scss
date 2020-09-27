@@ -1,0 +1,220 @@
+.container {
+  min-height: 100vh;
+  background: #200e52;
+  padding-bottom:85px;
+  &.ipx{
+      padding-bottom: 115px;
+  }
+}
+.bg-linear {
+  width: 375px;
+  height: 345px; //渐变的背景
+  background: linear-gradient(#2b195f 20%, #200e52 100%);
+}
+.true-content {
+  margin-top: -305px;
+  .no {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 4px solid #fdc98e;
+    border-radius: 50%;
+    color: #fdc98e;
+    line-height: 55px;
+    font-size: 34px;
+  }
+  .word {
+    width: 324px;
+    line-height: 18px;
+    color: #fdc98e;
+    margin: 18px auto 50px;
+    text-align: center;
+  }
+  .list {
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 34px;
+    width: 345px;
+    margin: 0 auto;
+    position: relative;
+    .tit {
+      width: 230px;
+      height: 45px;
+      display: block;
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .name-list {
+      .item {
+        width: 325px;
+        height: 45px;
+        border-bottom: 1px solid #f6f6f6;
+        &:last-child {
+          border: 0;
+        }
+        .avator {
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin: 0 5px 0 10px;
+        }
+        .nick {
+          width: 165px;
+          height: 14px;
+          line-height: 14px;
+        }
+        .agree {
+          height: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  .empty{
+    padding: 38px 0 37px;
+    text-align: center;
+  }
+  .add {
+    z-index: 9;
+    width: 345px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    &.ipx {
+      bottom: 45px;
+    }
+
+    .house {
+      width: 50px;
+      height: 50px;
+      background: #ececec;
+      border-radius: 4px;
+      display: block;
+      margin-right: 10px;
+    }
+    .tit {
+      height: 15px;
+      line-height: 15px;
+      margin-bottom: 12px;
+    }
+    .detail {
+      height: 14px;
+      line-height: 14px;
+    }
+    .btn-box {
+      width: 50px;
+      height: 25px;
+      line-height: 25px;
+      background: #fdc98e;
+      border-radius: 25px;
+      box-shadow: 1px 1px 0px 0px rgba(235, 158, 91, 0.4);
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      .true-btn {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+.alert {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  .bg-black {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .step {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 315px;
+    height: 545px;
+    background: #ffffff;
+    border-radius: 4px;
+    .tit {
+      height: 75px;
+      background: #fbf6f1;
+      border-radius: 4px 4px 0px 0px;
+      padding: 16px 20px;
+      line-height: 25px;
+    }
+    .img-box {
+      width: 180px;
+      height: 363px;
+      margin: 20px auto 22px;
+      position: relative;
+    }
+    .img {
+      width: 180px;
+      height: 363px;
+      display: block;
+    }
+    .hand {
+      width: 63px;
+      height: 61px;
+      position: absolute;
+      bottom: -16px;
+      right: -28px;
+      animation: handalert 0.5s infinite;
+      animation-direction: alternate;
+      &.hand2{
+        bottom:50px;
+        right:42px
+      }
+    }
+    .btn {
+      width: 285px;
+      height: 45px;
+      background: #f36e20;
+      border-radius: 2px;
+      margin:0 auto;
+      text-align: center;
+      line-height: 45px;
+      color:#fff;
+
+      .true-btn {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+@keyframes handalert {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+

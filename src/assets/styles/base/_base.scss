@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+/* 行数限制 */
+
+.G-limit-more {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.G-limit-one {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.G-limit-2 {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+}
+
+
+.G-more-cloum {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.G-one-cloum {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.G-col-2 {
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+}
+
+.G-page-hidden {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* 组件公共 */
+
+.G-component {
+    position: relative;
+}
+
+page {
+    background-color: #f7f7f7;
+    height: 100vh;
+    font-family: -apple-system, sans-serif;
+}
+
+.G-page-shadow {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+
+view,
+scroll-view,
+swiper,
+swiper-item,
+movable-area,
+movable-view,
+cover-view,
+cover-image,
+icon,
+text,
+rich-text,
+progress,
+button,
+checkbox-group,
+checkbox,
+form,
+input,
+label,
+picker,
+picker-view,
+radio-group,
+radio,
+slider,
+switch,
+textarea,
+navigator,
+functional-page-navigator,
+image,
+video,
+camera,
+live-player,
+live-pusher,
+map,
+canvas,
+open-data,
+web-view,
+ad {
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #222;
+}
+
+.G-bt-ccc {
+    border-bottom: 1px solid #ccc;
+}
+
+.G-bt-eee {
+    border-bottom: 1px solid #eee;
+}
+
+
+/* 字号 */
+.G-Fsize-8 {
+    font-size: 8px !important;
+}
+.G-Fsize-9 {
+    font-size: 9px !important;
+}
+
+.G-Fsize-10 {
+    font-size: 10px !important;
+}
+
+.G-Fsize-11 {
+    font-size: 11px !important;
+}
+
+.G-Fsize-12 {
+    font-size: 12px !important;
+}
+
+.G-Fsize-13 {
+    font-size: 13px !important;
+}
+
+.G-Fsize-14 {
+    font-size: 14px !important;
+}
+
+.G-Fsize-15 {
+    font-size: 15px !important;
+}
+
+.G-Fsize-16 {
+    font-size: 16px !important;
+}
+
+.G-Fsize-17 {
+    font-size: 17px !important;
+}
+
+.G-Fsize-18 {
+    font-size: 18px !important;
+}
+
+.G-Fsize-20 {
+    font-size: 20px !important;
+}
+
+.G-Fsize-22 {
+    font-size: 22px !important;
+}
+
+.G-Fsize-24 {
+    font-size: 24px !important;
+}
+.G-Fsize-30 {
+    font-size: 30px !important;
+}
+
+.G-Fweight-700 {
+    font-weight: 700 !important;
+}
+.G-Fweight-500 {
+    font-weight: 500 !important;
+}
+.G-bold {
+    font-weight: 700 !important;
+}
+
+.G-icon-50 {
+    font-size: 50px !important;
+}
+
+.G-text-c {
+    text-align: center;
+}
+
+.G-text-l {
+    text-align: left;
+}
+
+.G-text-r {
+    text-align: right;
+}
+
+.G-visiblity-hidden {
+    visibility: hidden;
+}
+
+// button{
+//   border: none;
+//   border-radius: 0;
+// }
+// button::after {
+//   border-radius: 0;
+//   border: none;
+//   border-color: #fff;
+// }
+// input{
+//   outline:none;
+//   border:none;
+//   list-style: none;
+//   }
+.G-bottom-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: .45px;
+    background-color: #f36e20;
+    font-size: 0.16px;
+    color: #fff;
+    text-align: center;
+    line-height: .45px;
+}
+
+.empty-con {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.G-w-100 {
+    width: 100%;
+}
+
+.G-inline-block {
+    display: inline-block
+}
+.G-authorization-con{
+    position: relative;
+    .G-authorization-btn{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        z-index: 7;
+    }
+}

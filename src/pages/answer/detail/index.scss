@@ -1,0 +1,242 @@
+.default-height {
+    min-height: 100vh;
+    background: #fff;
+}
+.pad-bot {
+    padding-bottom: 60px;
+}
+.ipx {
+    padding-bottom: 90px;
+}
+.fot-link,
+.fot-ios {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #f7f8f9;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    .line {
+        width: 1px;
+        height: 10px;
+        background: #f7f8f9;
+    }
+    .link {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        .text {
+            color: #222222;
+            line-height: 17px;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        .share-btn {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .iconfont {
+        font-size: 17px;
+        color:#0000AF;
+        font-weight: bold;
+    }
+}
+.fot-ios {
+    height: 85px !important;
+    padding-bottom: 34px !important;
+}
+
+.banner {
+    height: 375px;
+    background: #fff;
+    position: relative;
+    .image {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .paging {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 44px;
+        height: 20px;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 14px;
+        font-size: 12px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 20px;
+    }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+//guanzhu
+.collect-box {
+    background: #ffffff;
+    height: 60px;
+    padding: 0 15px;
+    .btn {
+        width: 64px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        background: #f1f3f8;
+        border-radius: 2px;
+    }
+    .btn-no {
+        .sign {
+            font-size: 8px;
+            margin-right: 4px;
+            color: #0000af;
+        }
+        .word {
+            color: #0000af;
+        }
+    }
+    .btn-yes {
+        font-size: 14px;
+        color: #a7adb6;
+        font-weight: bold;
+    }
+    .message {
+        min-width: 239px;
+        display: flex;
+    }
+    .image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: antiquewhite;
+    }
+    .image-v {
+        width: 14px;
+        height: 14px;
+        margin-left: 5px;
+        // background: #0000AF;
+    }
+    .name {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: #222222;
+        line-height: 20px;
+    }
+    .contact {
+        display: flex;
+        .box {
+            margin-right: 6px;
+            display: flex;
+            align-items: center;
+        }
+        .iconfont {
+            color: #a7adb6;
+        }
+        .text {
+            color: #a7adb6;
+            line-height: 20px;
+            font-size: 14px;
+            margin-left: 2px;
+        }
+    }
+}
+.record-box {
+    position: relative;
+}
+.record {
+    background: #ffffff;
+    margin-top: 15px;
+    padding: 15px 15px 15px 15px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.manager {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: #f5e8ca;
+    border-radius: 22.5px;
+    padding: 0 15px;
+    z-index: 100;
+    .record-time,
+    .iconfont {
+        font-weight: bold;
+    }
+}
+.question-title {
+    background: #ffffff;
+    padding: 15px 15px 15px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    line-height: 22px;
+}
+.video {
+    width: 168px;
+    height: 98px;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+    .video-paly {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+    }
+    .play {
+        position: absolute;
+        left: -12px;
+        top: 35px;
+        margin-left: 50%;
+        z-index: 300;
+        width: 24px;
+        height: 24px;
+        border: 2px #fff solid;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .iconfont {
+            font-size: 8px;
+            color: #fff;
+        }
+    }
+}
+#answerVideo {
+    width: 160px;
+    height: 90px;
+}
+.banner-video {
+    width: 100%;
+    height: 100%;
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+.gray-line {
+    width: 375px;
+    height: 15px;
+    background: #f7f8f9;
+}

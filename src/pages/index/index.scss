@@ -1,0 +1,36 @@
+.index {
+  position: relative;
+  padding-top: 150px;
+  background-color: #0000AF;
+  height: 100vh;
+}
+
+.bd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .icon-con {
+    width: 94px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 0px #a6abbd inset, -5px -5px 10px 0px #fafbff inset;
+    .iconfont {
+      font-size: 22px;
+    }
+  }
+  .introduction {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    line-height: 20px;
+    letter-spacing: 10px;
+  }
+}
+

@@ -1,0 +1,104 @@
+.G-time-ft {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 375px;
+    height: 176px;
+    background-color: #ecf0f3;
+    border-radius: 30px 30px 0px 0px;
+    &.small {
+        height: 100px;
+        background-color: #ECF0F3;
+        .title {
+            margin: 15px 0 10px;
+            .title-text {
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 4px;
+            }
+            .time-btn {
+                width: 50px;
+                height: 50px;
+                right: 100px;
+            }
+        }
+        .time-content {
+            .time-item {
+                padding: 8px 10px;
+                min-width: 45px;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 600;
+                background: #ECF0F3;
+                border-radius: 10px;
+                // box-shadow: 0px 0px 12px 0px rgba(166,171,189,0.5), -6px -6px 12px 0px #fafbff; 
+                box-shadow: 0px 0px 12px 0px rgba(211, 215, 226, 0.5), -6px -6px 12px 0px #fafbff;
+                // box-shadow: 0px 0px 12px 0px rgba(246, 247, 251, 0.5), -6px -6px 12px 0px #333; 
+            }
+            .time-split {
+                width: 41px;
+                text-align: center;
+                font-size: 28px;
+            }
+        }
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+        position: relative;
+        .title-text {
+            font-size: 16px;
+            color: #0000af;
+            line-height: 22px;
+            letter-spacing: 6px;
+            font-weight: 500;
+            margin-right: 5px;
+        }
+        .title-icon {
+            color: #0000AF;
+            font-size: 18px;
+            line-height: 1;
+        }
+        .time-btn {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            right: 70px;
+        }
+    }
+    .time-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .time-item {
+            min-width: 62px;
+            text-align: center;
+            padding: 17px 14px;
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 700;
+            color: #0000af;
+            background: #ecf0f3;
+            border-radius: 20px;
+            box-shadow: 5px 5px 20px 0px rgba(211, 215, 226, 0.5), -10px -10px 20px 0px #fafbff;
+        }
+        .time-split {
+            width: 41px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #0000af;
+        }
+    }
+}
+
+.G-iphone {
+    .G-time-ft {
+        &.small {
+            height: 134px;
+            padding-bottom: 34px;
+        }
+    }
+}

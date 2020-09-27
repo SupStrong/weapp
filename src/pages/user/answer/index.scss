@@ -1,0 +1,12 @@
+.bd {
+  // border-top: 15px solid #F7F8F9;
+  min-height: 100vh;
+  background: #fff;
+}
+.backg {
+  background: #f7f8f9;
+  padding: 0 0 15px 0;
+  &:first-child {
+    padding-top: 15px;
+  }
+}

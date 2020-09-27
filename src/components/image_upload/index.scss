@@ -1,0 +1,31 @@
+.G-tab-con {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: #fff;
+  .tab-item {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 16px;
+    color: #A7ADB6;
+    font-weight: 500;
+    &:not(:last-child){
+      &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 13px;
+        width: 1px;
+        height: 15px;
+        background: #f7f8f9;
+      }
+    }
+    &.active{
+      color: #222222;
+    }
+  }
+}

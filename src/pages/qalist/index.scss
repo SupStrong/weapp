@@ -1,0 +1,82 @@
+.hd {
+    z-index: 100;
+    position: fixed;
+    width: 375px;
+    top: 0;
+    background-color: #fff;
+}
+
+.narbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#0000AF;
+    .narbar-item {
+        flex: 1;
+    }
+    .city-con {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .city-con-name {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+        }
+        .iconfont {
+            margin: 0 5px;
+            font-size: 6px;
+            color: #fff;
+        }
+    }
+    .center-text {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+    }
+}
+.bd{
+    border-top: 5px solid #f7f8f9;
+}
+.search-con {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background-color: #0000AF;
+    
+    .search-con-input{
+        height: 36px;
+        width: 345px;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        background-color: #F7F8F9;
+        border-radius: 4px;
+    }
+    .iconfont {
+        margin: 0 6px 0 10px;
+        font-size: 13px;
+        color: #A7ADB6;
+    }
+    .search-con-text {
+        font-size: 14px;
+        color: #a7adb6;
+        line-height: 20px;
+    }
+}
+
+.ask-btn {
+    width: 50px;
+    height: 50px;
+    background: #1010c9;
+    border-radius: 50%;
+    position: fixed;
+    right: 15px;
+    bottom: 160px;
+    .iconfont {
+        color: #fff;
+        font-size: 18px;
+    }
+}

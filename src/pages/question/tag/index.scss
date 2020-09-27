@@ -1,0 +1,87 @@
+$col:#222;
+.index {
+  padding: 67px 0 60px 0;
+  &.isIphone{
+    padding-bottom: 94px;
+  }
+  .tag-add {
+    height: 52px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    .tag-add-text {
+      padding: 15px 0 15px 15px;
+      color: $col;
+      line-height: 22px;
+    }
+    .tag-add-empty{
+      color: #c8ccd7;
+      margin-left: 8px;
+    }
+    .tag-add-list {
+      display: flex;
+      .content {
+        width: 80px;
+        height: 32px;
+        text-align: center;
+        background-color: #f2f4f7;
+        border-radius: 2px;
+        margin-left: 8px;
+        color: $col;
+        line-height: 20px;
+        padding: 6px 0;
+      }
+    }
+  }
+
+  .tag-list {
+    height: 100%;
+   padding: 0 15px 15px 15px;
+    .tag-list-title{
+      display: inline-block;
+      margin: 15px 0 2px 0;
+    }
+    .tag-list-content{
+      .content{
+        width: 80px;
+        height: 32px;
+        background: #ffffff;
+        border: 1px solid #eeeeee;
+        border-radius: 2px;
+        padding: 6px 0;
+        line-height: 20px;
+        margin: 8px 8px 0 0;
+        display: inline-block;
+        &.active{
+          background: #f5e8ca;
+          border: 1px solid #f5e8ca;
+        }
+      }
+      .content:nth-child(4){
+        margin-right: 0;
+      }
+    }
+  }
+
+  .tag-submit {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    &.isIphone{
+      height: 84px;
+    }
+    .submit{
+      width: 345px;
+      display: inline-block;
+      margin: 0 auto;
+      background: #0000af;
+      border-radius: 8px;
+      height: 44px;
+      line-height: 44px;
+    }
+  }
+}

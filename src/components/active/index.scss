@@ -1,0 +1,18 @@
+.G-active {
+  width: 375px;
+  display: flex;
+  justify-content: center;
+  &.search{
+    position: fixed;
+    top: 20px;
+  }
+  &.qa-list{
+    background-color: #fff;
+    border-bottom: 5px solid #F7F8F9;
+  }
+  .G-blank-img {
+    margin: 0 auto;
+    width: 355px;
+    height: 72px;
+  }
+}

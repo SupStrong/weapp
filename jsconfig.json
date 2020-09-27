@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/package": ["./package.json"],
+      "@/project": ["./project.config.json"],
+      "@/http/*": ["./src/http/*"],
+      "@/actions/*": ["./src/actions/*"],
+      "@/assets/*": ["./src/assets/*"]
+    }
+  }
+}

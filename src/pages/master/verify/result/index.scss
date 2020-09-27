@@ -1,0 +1,47 @@
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  height: 100vh;
+  padding: 0 15px;
+
+  .hd {
+    padding: 120px 0 20px;
+    text-align: center;
+    .iconfont {
+      font-size: 60px;
+      color: #0000AF;
+      margin-bottom: 15px;
+    }
+
+    .des {
+      font-size: 16px;
+      font-weight: 500;
+      color: #0000af;
+      line-height: 22px;
+    }
+  }
+
+  .bd {
+    margin-bottom: 33px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #222222;
+    line-height: 20px;
+  }
+
+  .ft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    background: #0000af;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 22px;
+  }
+}

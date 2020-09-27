@@ -1,0 +1,226 @@
+.G-question-answer {
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 5px solid #F7F8F9;
+  position: relative;
+  &.no-user {
+    border-bottom: 0;
+    border-radius: 10px;
+    .item-bd{
+      .audio{
+        border-radius:2px;
+      }
+    }
+
+
+    .item-user {
+      display: none !important;
+    }
+
+    .item-title {
+      margin-bottom: 15px;
+    }
+
+
+  }
+
+  &.no-title {
+    padding-top: 5px;
+    border-bottom: 1px solid #F7F8F9;
+
+    .item-title {
+      display: none;
+    }
+  }
+
+  .item-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+    line-height: 22px;
+  }
+
+  .item-user {
+    height: 60px;
+    margin-bottom: 5px;
+
+    .avatar-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 0.5px solid #f7f8f9;
+    }
+
+    .info {
+      width: 249px;
+      padding-left: 10px;
+
+      .tit {
+        .name {
+          margin-right: 5px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #222222;
+          line-height: 20px;
+        }
+
+        .vip {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      .commicatinon {
+        .commicatinon-item {
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+
+          .iconfont {
+            font-size: 14px;
+            margin-right: 2px;
+            color: #A7ADB6;
+          }
+
+          .G-Fsize-14 {
+            color: #A7ADB6;
+          }
+        }
+      }
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 32px;
+      background: #F1F3F8;
+      border-radius: 2px;
+
+      .cancel {
+        color: #A7ADB6;
+      }
+
+      .add {
+        width: 100%;
+        line-height: 1;
+
+        .sign {
+          margin-right: 4px;
+          color: #0000af;
+          font-size: 8px;
+        }
+
+        .word {
+          font-size: 14px;
+          color: #0000af;
+
+        }
+      }
+    }
+  }
+
+  .item-bd {
+    margin-bottom: 12px;
+
+    .delate-text {
+      width: 345px;
+      height: 45px;
+      background: #f7f8f9;
+      border-radius: 2px;
+      font-size: 14px;
+      text-align: center;
+      color: #e95454;
+      line-height: 45px;
+    }
+
+    .video-con {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 2px;
+      width: 345px;
+      height: 194px;
+
+      .cover-img {
+        width: 345px;
+      }
+
+      .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+      }
+      .progress-line {
+        position: absolute;
+        bottom: 17px;
+        left: 10px;
+        width: 325px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 20px;
+        &::after {
+          position: absolute;
+          content: '';
+          top: 25px;
+          left: 0px;
+          width: 325px;
+          height: 2px;
+          background: rgba(255, 255, 255, 0.6);
+          border-radius: 1px;
+        }
+      }
+    }
+
+    .audio {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 345px;
+      height: 45px;
+      padding: 0 15px;
+      background-color: #F5E8CA;
+      border-radius: 2px;
+      .iconfont {
+        font-size: 16px;
+        color: #2A2A37;
+      }
+
+      .time {
+        font-size: 16px;
+        color: #222222;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .item-ft {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .item-ft-text {
+      font-size: 14px;
+      color: #a7adb6;
+      line-height: 20px;
+    }
+
+    .item-ft-split {
+      width: 2px;
+      height: 2px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: #a7adb6;
+    }
+    .date-time{
+      position: absolute;
+      right:0;
+      color:#a7adb6;
+    }
+  }
+}

@@ -1,0 +1,490 @@
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.container {
+  min-height: 100vh;
+  background: #200e52;
+  padding: 45px 0 0;
+  &.pdbot {
+    padding-bottom: 80px;
+    &.ipx {
+      padding-bottom: 110px;
+    }
+  }
+}
+.tab-box {
+  width: 100%;
+  background: #2b195f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  .tab-item {
+    height: 45px;
+    line-height: 45px;
+    flex: 1;
+    text-align: center;
+    color: #fdc98e;
+    position: relative;
+    // &.active {
+    //   font-weight: 600;
+    // }
+    &.active::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: #fdc98e;
+      border-radius: 1px;
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.bg-linear {
+  width: 375px;
+  height: 345px; //渐变的背景
+  background: linear-gradient(#2b195f 20%, #200e52 100%);
+}
+
+.act-content {
+  margin-top: -345px;
+  width: 100%;
+  //活动规则
+  .img-box {
+    width: 375px;
+    height: 298px;
+    margin: 6.5px 0 50px;
+    .act-banner {
+      width: 375px;
+      height: 298px;
+    }
+  }
+  .prize-content {
+    .prize:last-child {
+      margin-bottom: 0;
+    }
+    .prize {
+      width: 345px;
+      height: 100px;
+      background: #fdc98e;
+      border-radius: 4px;
+      margin: 0 auto 10px;
+      position: relative;
+
+      .pic-box {
+        width: 80px;
+        height: 80px;
+        margin-right: 9.5px;
+        overflow: hidden;
+        border-radius: 4px;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        .gift {
+          width: 100%;
+          height: 100%;
+        }
+        .ranking {
+          width: 55px;
+          height: 20px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        &.box1 {
+          width: 120px;
+          height: 120px;
+          background: #ffffff;
+          box-shadow: 2px 3px 8px 0px rgba(255, 168, 69, 0.2);
+        }
+      }
+      .info {
+        padding-top: 15px;
+        margin-left: 100px;
+        &.info1 {
+          margin-left: 140px;
+        }
+
+        .name {
+          height: 16px;
+          line-height: 16px;
+        }
+        .price {
+          display: inline-block;
+          height: 18px;
+          line-height: 18px;
+          border-radius: 2px;
+          padding: 0 3px;
+          background: #eeb06a;
+          margin: 10px 0 12px;
+          &.lucky-price {
+            margin: 0 0 0 5px;
+          }
+        }
+        .product {
+          height: 14px;
+          line-height: 14px;
+          color: #b77122;
+          margin: 10px 0 16px;
+        }
+        .num {
+          color: #ea554a;
+          height: 15px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+  .add {
+    width: 345px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 15px auto 0;
+    position: relative;
+    .house {
+      width: 50px;
+      height: 50px;
+      background: #ececec;
+      border-radius: 4px;
+      display: block;
+      margin-right: 10px;
+    }
+    .tit {
+      height: 15px;
+      line-height: 15px;
+      margin-bottom: 12px;
+    }
+    .detail {
+      height: 14px;
+      line-height: 14px;
+    }
+    .btn-box {
+      width: 50px;
+      height: 25px;
+      line-height: 25px;
+      background: #fdc98e;
+      border-radius: 25px;
+      box-shadow: 1px 1px 0px 0px rgba(235, 158, 91, 0.4);
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+  }
+  .footer {
+    padding: 10px 0 15px;
+    position: fixed;
+    background: #200e52;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 15px;
+    &.ipx {
+      padding: 10px 0 45px;
+    }
+    .btn {
+      display: block;
+      width: 345px;
+      height: 48px;
+      margin: 0 auto;
+    }
+  }
+
+  //排行榜单
+  .ranking-place {
+    padding-top: 5px;
+    position: relative;
+    .cup {
+      width: 100%;
+      height: 172px;
+      display: block;
+    }
+    .rank {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding-top: 39px;
+      .title {
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+      }
+      .num {
+        height: 23px;
+        line-height: 23px;
+        text-align: center;
+        margin: 13px 0 25px;
+      }
+      .agree {
+        width: 260px;
+        padding: 0 8px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #942c24;
+        background: #fdc98e;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+      }
+      .goLogin {
+        margin-top: 20px;
+        line-height: 20px;
+        text-decoration: underline;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    .rank-box {
+      position: relative;
+      width: 345px;
+      height: 366px;
+      background: #ffffff;
+      border-radius: 23px;
+      margin: 0 auto;
+      padding-top: 33px;
+      .tit {
+        display: block;
+        height: 45px;
+        width: 190px;
+        position: absolute;
+        top: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .role-box {
+        width: 100%;
+        height: 285px;
+        .item {
+          width: 325px;
+          margin: 0 auto;
+          height: 45px;
+          border-bottom: 1px solid #f5eadd;
+          position: relative;
+          .num {
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            margin-right: 27px;
+            .pic {
+              width: 32px;
+              height: 32px;
+              display: block;
+            }
+          }
+          .avator {
+            display: block;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+          .nick {
+            width: 108px;
+            height: 14px;
+            line-height: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .agree {
+            color: #ea554a;
+          }
+          .gift {
+            width: 25px;
+            height: 25px;
+            border-radius: 2px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .rank-footer {
+        width: 345px;
+        height: 48px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .btn {
+          display: block;
+          width: 345px;
+          height: 48px;
+        }
+      }
+    }
+  }
+
+  //抽奖榜单
+  .draw-box {
+    margin-top: 70px;
+    position: relative;
+    .bottom-bg {
+      width: 280px;
+      height: 200px;
+      opacity: 0.4;
+      background: #ffffff;
+      border-radius: 10px;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .center-bg {
+      width: 300px;
+      height: 200px;
+      opacity: 0.6;
+      background: #ffffff;
+      border-radius: 10px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .top-bg {
+      width: 320px;
+      height: 200px;
+      background: #ffffff;
+      border-radius: 10px;
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      .avator {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: #fff;
+        border: 2px solid #ffffff;
+        box-shadow: 1px 1px 8px 0px rgba(255, 181, 76, 0.2);
+        border-radius: 50%;
+        margin: -30px auto 0;
+      }
+      .name {
+        text-align: center;
+        height: 15px;
+        line-height: 15px;
+        margin: 15px 0 30px;
+      }
+      .term {
+        height: 17px;
+        line-height: 17px;
+        color: #ea554a;
+        text-align: center;
+        &.ptop {
+          margin-top: 60px;
+        }
+      }
+      .date {
+        height: 14px;
+        line-height: 14px;
+        text-align: center;
+        margin-top: 40px;
+      }
+      .btn-box {
+        margin-top: 17px;
+      }
+      .btn {
+        width: 260px;
+        height: 48px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.alert {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  .bg-black {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .step {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 315px;
+    height: 545px;
+    background: #ffffff;
+    border-radius: 4px;
+    .tit {
+      height: 75px;
+      background: #fbf6f1;
+      border-radius: 4px 4px 0px 0px;
+      padding: 16px 20px;
+      line-height: 25px;
+    }
+    .img-box {
+      width: 180px;
+      height: 363px;
+      margin: 20px auto 22px;
+      position: relative;
+    }
+    .img {
+      width: 180px;
+      height: 363px;
+      display: block;
+    }
+    .hand {
+      width: 63px;
+      height: 61px;
+      position: absolute;
+      bottom: -16px;
+      right: -28px;
+      animation: handalert 0.5s infinite;
+      animation-direction: alternate;
+      &.hand2 {
+        bottom: 50px;
+        right: 42px;
+      }
+    }
+    .btn {
+      width: 285px;
+      height: 45px;
+      background: #f36e20;
+      border-radius: 2px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 45px;
+      color: #fff;
+
+      .true-btn {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+@keyframes handalert {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}

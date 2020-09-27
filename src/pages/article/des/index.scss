@@ -1,0 +1,131 @@
+
+.index{
+  padding-bottom: 100px;
+  background-color: #fff;
+  min-height: 100vh;
+  .hd {
+    padding: 15px 15px 10px;
+    background-color: #fff;
+    border-bottom: 5px solid #F7F8F9;
+    .title {
+      display: block;
+      width: 100%;
+      margin-bottom: 19px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 500;
+    }
+  
+    .bd-ft {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  
+      .item-con {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0 10px 0 12px;
+        margin-left: 1px;
+        height: 28px;
+        font-weight: 500;
+        .iconfont {
+          font-size: 15px;
+          margin-right: 5px;
+          color: #A7ADB6;
+          &.collect{
+            color: #FFCB57;
+          }
+        }
+        .item-text {
+          font-size: 14px;
+          line-height: 20px;
+          color: #A7ADB6;
+        }
+  
+        &.split::after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+          background-color: #f7f8f9;
+        }
+        .share-btn{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  
+  .bd {
+    padding: 20px 15px 30px 15px;
+    background-color: #fff;
+    .bd-title {
+      color: #222222;
+      font-size: 16px;
+      color: #222222;
+      line-height: 22px;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+    .price-des {
+      width: 346px;
+      height: 201px;
+    }
+  }
+  
+  .ft{
+    padding: 0 15px;
+    background-color: #fff;
+    overflow: hidden;
+    .bd-title-con{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .bd-title--text{
+        color: #222222;
+        font-size: 16px;
+        color: #222222;
+        line-height: 22px;
+        letter-spacing: 2px;
+        font-weight: 500;
+      }
+      .cope-btn{
+        width: 40px;
+        height: 22px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 22px;
+        color: #A7ADB6;
+        border-radius: 12px;
+        border: 1px solid #ecf0f3;
+      }
+    }
+  
+    .des-con{
+      width: 345px;
+      margin: 15px auto;
+      padding: 15px;
+      background-color: #F7F8F9;
+      .des-con-item{
+        color: #222222;
+      font-size: 14px;
+      line-height: 24px;
+      }
+    }
+  
+  
+  
+  
+  }
+  &.G-iphone{
+    padding-bottom: 134px;
+  }
+}
+.item-con{.iconfont{}.item-text{}.share-btn{}}
